@@ -122,6 +122,9 @@ double totalArea(const std::vector<Shape*>& shapes) {
 //         If the vector is empty, return "".
 std::string largestShapeName(const std::vector<Shape*>& shapes) {
     // TODO
+    if(shapes.empty()){
+        return "";
+            }
     const Shape*big=shapes[0];
     
     for (const Shape*s : shapes )
